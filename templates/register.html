@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="card-title text-center">{{ _("Înregistrare") }}</h3>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="{{ url_for('register') }}">
+                        <!-- Date Companie -->
+                        <h5 class="mb-3">{{ _("Date Companie") }}</h5>
+                        <div class="mb-3">
+                            <label for="company_name" class="form-label">{{ _("Nume Companie") }}</label>
+                            <input type="text" class="form-control" id="company_name" name="company_name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="company_address" class="form-label">{{ _("Adresă") }}</label>
+                            <input type="text" class="form-control" id="company_address" name="company_address" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="company_phone" class="form-label">{{ _("Telefon") }}</label>
+                            <input type="text" class="form-control" id="company_phone" name="company_phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="company_country" class="form-label">{{ _("Țară") }}</label>
+                            <input type="text" class="form-control" id="company_country" name="company_country" required>
+                        </div>
+
+                        <!-- Date Administrator -->
+                        <h5 class="mb-3 mt-4">{{ _("Date Administrator") }}</h5>
+                        <div class="mb-3">
+                            <label for="full_name" class="form-label">{{ _("Nume Complet") }}</label>
+                            <input type="text" class="form-control" id="full_name" name="full_name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">{{ _("Email") }}</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">{{ _("Parolă") }}</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">{{ _("Înregistrează") }}</button>
+                            <a href="{{ url_for('login') }}" class="btn btn-secondary">{{ _("Ai deja cont? Loghează-te") }}</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

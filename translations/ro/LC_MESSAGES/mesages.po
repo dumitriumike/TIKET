@@ -1,0 +1,29 @@
+msgid "Bun venit!"
+msgstr "Welcome!"
+
+msgid "Adaugă Companie"
+msgstr "Add Company"
+
+msgid "Add User"
+msgstr "Adaugă Utilizator"
+
+msgid "Login"
+msgstr "Loghează-te"
+
+msgid "Logout"
+msgstr "Deconectează-te"
+
+msgid "Company added successfully!"
+msgstr "Companie adăugată cu succes!"
+
+msgid "User added successfully!"
+msgstr "Utilizator adăugat cu succes!"
+
+msgid "Login successful!"
+msgstr "Autentificare reușită!"
+
+msgid "Incorrect email or password!"
+msgstr "Email sau parolă incorectă!"
+
+msgid "You have been logged out successfully!"
+msgstr "Te-ai deconectat cu succes!"

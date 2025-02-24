@@ -1,0 +1,30 @@
+myproject/
+│
+├── app.py
+├── babel.cfg
+├── translations/
+│   ├── en/LC_MESSAGES/
+│   │   ├── messages.po
+│   │   └── messages.mo
+│   ├── fr/LC_MESSAGES/
+│   │   ├── messages.po
+│   │   └── messages.mo
+│   └── ro/LC_MESSAGES/
+│       ├── messages.po
+│       └── messages.mo
+└── templates/
+    ├── index.html
+    ├── add_company.html
+    ├── add_user.html
+    └── login.html
+
+pip install --upgrade Flask-Babel
+
+Verifică PATH-ul sistemului
+Dacă pybabel nu este recunoscut, este posibil ca directorul Scripts din directorul de utilizator să nu fie în PATH. Poți adăuga manual directorul în PATH:
+Deschide setările de sistem și caută "Variabile de mediu".
+În "Variabile de sistem", selectează Path și apasă pe "Edit".
+Adaugă următorul director:
+
+
+ C:\Users\Admin\AppData\Roaming\Python\Python313\Scripts  

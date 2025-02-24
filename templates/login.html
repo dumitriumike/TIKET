@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card shadow-sm mx-auto" style="max-width: 400px;">
+    <div class="card-header">
+        <h5 class="card-title mb-0">{{ _("Loghează-te") }}</h5>
+    </div>
+    <div class="card-body">
+        <form method="POST">
+            <div class="mb-3">
+                <label for="email" class="form-label">{{ _("Email") }}</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password_hash" class="form-label">{{ _("Parolă") }}</label>
+                <input type="password" class="form-control" id="password_hash" name="password_hash" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">{{ _("Loghează-te") }}</button>
+        </form>
+        <div class="d-grid gap-2 mt-3">
+            <a href="{{ url_for('register') }}" class="btn btn-success">{{ _("Înregistrează-te") }}</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

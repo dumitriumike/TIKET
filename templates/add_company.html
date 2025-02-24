@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card shadow-sm">
+    <div class="card-header">
+        <h5 class="card-title mb-0">{{ _("Adaugă Companie") }}</h5>
+    </div>
+    <div class="card-body">
+        <form method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">{{ _("Nume") }}</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">{{ _("Adresă") }}</label>
+                <input type="text" class="form-control" id="address" name="address">
+            </div>
+            <div class="mb-3">
+                <label for="city" class="form-label">{{ _("Oraș") }}</label>
+                <input type="text" class="form-control" id="city" name="city">
+            </div>
+            <div class="mb-3">
+                <label for="country" class="form-label">{{ _("Țară") }}</label>
+                <input type="text" class="form-control" id="country" name="country" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">{{ _("Telefon") }}</label>
+                <input type="text" class="form-control" id="phone" name="phone">
+            </div>
+            <div class="mb-3">
+                <label for="website" class="form-label">{{ _("Website") }}</label>
+                <input type="text" class="form-control" id="website" name="website">
+            </div>
+            <div class="mb-3">
+                <label for="industry" class="form-label">{{ _("Industrie") }}</label>
+                <input type="text" class="form-control" id="industry" name="industry">
+            </div>
+            <button type="submit" class="btn btn-primary">{{ _("Salvează") }}</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
