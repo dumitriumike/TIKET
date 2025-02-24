@@ -39,7 +39,7 @@ jobs:
 
     - name: Apply Migrations
       run: |
-        python manage.py migrate
+        python app.py migrate
 
     - name: Set Environment Variables
       run: echo "SECRET_KEY=${{ secrets.DJANGO_SECRET_KEY }}" >> .env
